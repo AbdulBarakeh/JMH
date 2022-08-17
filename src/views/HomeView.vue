@@ -4,6 +4,13 @@ import SendReceive from "../components/SendReceive.vue";
 
 <template>
   <main>
-    <SendReceive />
+    <SendReceive class="full" />
   </main>
 </template>
+
+<style scoped>
+.full {
+  height: 100%;
+  width: 100%;
+}
+</style>

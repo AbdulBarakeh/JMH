@@ -6,6 +6,9 @@ defineProps<{
 
 <template>
   <h1>{{ msg }}</h1>
+  <input type="text" placeholder="Insert receiver's id here">
+  <br/>
+  <input type="file" />
 </template>
 
 <style scoped>

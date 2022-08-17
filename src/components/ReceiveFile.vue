@@ -1,20 +1,21 @@
 <script setup lang="ts">
 import { Guid } from "guid-typescript";
-defineProps<{
-  msg: string;
-  guid: Guid;
+const props = defineProps<{
+  msg: String;
 }>();
+  var guid;
 
 function setGuid(){
-  return Guid.create();
+  guid = Guid.create();
 }
+setGuid()
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>{{ props.msg }}</h1>
   <h3>To receive files provide the sender with the given id:</h3>
   <br />
-  <p>{{ setGuid() }}</p>
+  <p>{{ guid }}</p>
 </template>
 
 <style scoped>
